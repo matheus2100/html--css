@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+
+    <picture>
+        <source media="(max-width:750px)" srcset="imagens/foto-p.png" type="image/png"> <!--SEMPRE COLOCAR 50 PIXELS A MAIS PARA TER UMA "FOLGUINHA"-->
+        <source media="(max-width:1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender agora como reproduzir um áudio (podcast, música, etc.)em HTML5</p>
+    <audio src="midia/oh.fire.mp3" controls autoplay></audio>
+    <!--APENAS O autoplay N FUNCIONA! AINDAA PRECISA DA TAG controls PARA APARECER O PLAY DO ÁUDIO NO SITE-->
+    <!--MP3, WAVE, OGG(OPEN SOURCE)-->
+
+    <h1>Caso não Reproduza em MP3, WAV e OGG</h1>
+        <p>Caso nenhum desses tipos de áudio não funcionem, infelizmente, seu navegador não consegue reproduzir áudio</p> <!--O MEU FUNCIONA O MP3-->
+        <p><a href="midia/oh.fire.mp3" download>Clique aqui</a> para baixar o arquivo mp3</p>
+        <!--EVITAR AO MÁXIMO ÁUDIO WAV, POIS É MUITO PESADO E GRANDE-->
+
+</body>
+</html>

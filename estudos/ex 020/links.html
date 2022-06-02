@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: rgb(255, 0, 0);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color:crimson;
+        }
+
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active{
+            color: darkorange;
+        }
+
+        a::before{
+            content: '⇒';
+        }
+
+        a::after{
+            content: '[link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://youtube.com/channel/UCEj6_-Gr50NK2f1PWphj7BQ" target="_blank">Canal do YouTube</a></li>
+        <li><a href="https://instagram.com/xizzy_ofc?utm_medium=copy_link">Instagram</a></li>
+        <li><a href="https://twitter.com/MatheusSchwab3?t=pxRPsoc3jiqirBkNRHickg&s=09">Twitter</a></li>
+    </ul>
+    
+</body>
+</html>

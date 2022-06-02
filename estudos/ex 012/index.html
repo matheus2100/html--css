@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Videos em HTML5</title>
+</head>
+<body>
+    <h1>Inserindo Vídeos Hospedados Localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor</p>
+
+    <video width="350" controls>
+        <source src="midia/meu-video.mp4" type="video/mp4">
+        <source src="midia/Meu-Video.m4v" type="video/m4v">
+        <!--POSSO USAR UMA THUMBNAIL NO VÍDEO COM UMA IMAGEM PNG USANDO A TAG posters=""-->
+    </video>
+
+    <h1>Inserindo Vídeos do Youtube</h1>
+    <iframe width="460" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>
