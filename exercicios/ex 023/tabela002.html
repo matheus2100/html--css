@@ -40,18 +40,21 @@
             color: white;
         }
 
+        tbody > tr:nth-child(odd){
+            background-color: lightgray;
+        }
+
         td.num{
             text-align: right;
     </style>
 </head>
 <body>
     <h1>Uso de Tabelas Grandes</h1>
-    
     <table>
         <thead>
             <tr>
                 <th scope="col">Estado</th>
-                <th>População</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
