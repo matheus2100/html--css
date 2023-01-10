@@ -5,12 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
     <header>
         <h1>Meu Site</h1>
-        <menu>
+        <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+        <menu id="itens">
             <ul>
                 <li><a href="#">Opcão 1</a></li>
                 <li><a href="#">Opção 2</a></li>
@@ -23,6 +26,7 @@
     <main>
         <article>
             <h2>Testando Media Queries</h2>
+
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo illum aspernatur magnam perferendis minus rem, recusandae, non est dolores, perspiciatis molestiae delectus aliquid quidem. Alias in velit laudantium nobis molestiae?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas architecto inventore hic. Labore sapiente ut distinctio corrupti atque consequuntur ipsam pariatur deserunt accusantium optio, laboriosam assumenda alias, sed fugiat sunt.</p>
 
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae excepturi, soluta fugit nisi ipsum provident numquam vel quo. Magni assumenda hic culpa doloremque fugit blanditiis eaque iusto voluptatum neque quam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quis nostrum ratione!</p>
@@ -30,5 +34,14 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore nam provident facere aspernatur, deleniti asperiores libero, dolorem sit commodi numquam laudantium saepe perspiciatis eligendi debitis est dicta quasi tenetur accusantium? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem esse non perspiciatis dolorem reiciendis similique illo? Amet possimus quisquam et quos, vitae ab necessitatibus, facere, nesciunt itaque sit totam iure.</p>
         </article>
     </main>
+    <script>
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
